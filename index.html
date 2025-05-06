@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MAHII-MD</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      color: #fff;
+      background: radial-gradient(#1a0000, #0d0000);
+      background-image: url('https://github.com/Mahii-Botz/Mahii-md-LOGO/blob/main/halloween-scene-illustration-anime-style.jpg?raw=true');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .container {
+      text-align: center;
+      padding: 100px 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+      animation: flicker 2s infinite;
+    }
+
+    .highlight {
+      color: #ff0033;
+    }
+
+    .buttons .btn {
+      position: relative;
+      display: block;
+      margin: 20px auto;
+      padding: 15px 30px;
+      width: 250px;
+      color: #fff;
+      font-size: 1.2rem;
+      text-decoration: none;
+      border-radius: 25px;
+      z-index: 1;
+      overflow: hidden;
+      background: transparent;
+    }
+
+    .buttons .btn::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      border-radius: 25px;
+      background: linear-gradient(
+        90deg,
+        red 0%,
+        transparent 40%,
+        transparent 60%,
+        red 100%
+      );
+      background-size: 200% 200%;
+      animation: borderRun 2s linear infinite;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    @keyframes borderRun {
+      0% {
+        background-position: 200% 0;
+      }
+      100% {
+        background-position: -200% 0;
+      }
+    }
+
+    .buttons .btn:hover {
+      background-color: #ff0033;
+      color: #000;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 80px;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+
+    @keyframes flicker {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.8; }
+      70% { opacity: 0.6; }
+      90% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome To <span class="highlight">MAHII - MD</span></h1>
+
+    <div class="buttons">
+      <a href="https://github.com/Mahii-Botz/MAHII-MD-V2" target="_blank" class="btn">GIT-HUB REPO</a>
+      <a href="##" target="_blank" class="btn">Pairing - WEB</a>
+      <a href="https://www.youtube.com/channel/UCn_3LPuuGsB0IMmndEr4Dmg" target="_blank" class="btn">YT - Channel</a>
+    </div>
+
+    <footer>
+      © All Right Reserved By MAHII - MD
+    </footer>
+  </div>
+</body>
+</html>
